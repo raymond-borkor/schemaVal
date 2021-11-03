@@ -13,7 +13,7 @@ class ValController extends Controller
     {
 
         $validator = Validator::make($request->all(), [
-            'xml_schema' => 'required',
+            'xml_file' => 'required',
             'xsd_file' => 'required|max:2048'
         ]);
 
@@ -21,10 +21,10 @@ class ValController extends Controller
         {
             return response()->json(['error'=>$validator->errors()], 400);
         }
-        $xmlSchema = $request->file('xml_schema');
+        $xmlFile = $request->file('xml_file');
         $xsdFile = $request->file('xsd_file');
         $val = new DOMDocument();
-        $val->load($xmlSchema);
+        $val->load($xmlFile);
         if (!$val->schemaValidate($xsdFile)){
             return response()->json([
                 'Message' => 'Unable to validate, wrong parameters',
