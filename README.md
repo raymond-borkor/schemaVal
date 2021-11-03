@@ -1,9 +1,10 @@
 <h1>Laravel Based XML Schema Validation</h1>
 
 <p>
-    Things needed to run project
+    Things needed to run project</br>
     1. PHP</br>
     2. Composer (download <a href="getcomposer.org/download">from</a>)</br>
+    3. Postman
 </p>
 <p>
     <b>How to install</b>
