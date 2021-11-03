@@ -35,6 +35,7 @@
     3. Run 127.0.0.1:8000/gettoken
     4. Insert csrf_token code into postman with parameter: <b>_token</b>
 </p>
+Open image below to see postman Insert structure 
 ![overview_post](https://user-images.githubusercontent.com/25909985/140068390-181a7edc-f51d-4582-8bfb-fbfbc8d9045a.png)
 
 
